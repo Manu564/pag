@@ -92,7 +92,9 @@
     <section class="carousel-section">
   <h2>Destacados</h2>
   <div class="carousel">
-    <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+    <button type="button" class="carousel-btn prev" aria-label="Anterior" aria-controls="carousel-track" data-action="prev" title="Anterior">
+      <span aria-hidden="true">&#10094;</span>
+    </button>
 
     <div class="carousel-track">
       <div class="carousel-item">
@@ -130,8 +132,10 @@
         <a href="https://example.com/proyecto5" class="btn btn-primary" target="_blank">Ver Más</a>
       </div>
     </div>
-
-    <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+    
+    <button type="button" class="carousel-btn next" aria-label="Siguiente" aria-controls="carousel-track" data-action="next" title="Siguiente">
+      <span aria-hidden="true">&#10095;</span>
+    </button>
   </div>
 </section>
 

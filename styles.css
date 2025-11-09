@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+header, footer, section, nav, article {
+  display: block;
+}
+
+
+
+/* Tipografía */
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
@@ -119,11 +126,21 @@ body {
 }
 
 .carousel-btn.prev {
-  left: 15px;
+  top: 38%;
+  left: -15px;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+  color: var(--bg-dark);
 }
 
 .carousel-btn.next {
-  right: 15px;
+  top: 38%;
+  right: -15px;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+  color: var(--bg-dark);
 }
 
 

@@ -88,7 +88,15 @@ prevButton.addEventListener('click', () => {
   updateCarousel();
 });
 
-window.addEventListener('resize', updateCarousel);
+let resizeTimer;
+function onResize() {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(updateCarousel, 100);
+}
+
+window.addEventListener('resize', onResize);
+
+// Ensure an initial safe call (guard inside updateCarousel too).
 updateCarousel();
 
 /* Fin de script.js */
