@@ -125,15 +125,10 @@ body {
 
 /* == PROYECTOS SECTION == */
 .proyectos-section {
-  /*background-image: url('https://images.unsplash.com/photo-1502741509793-1bf00d85aeff?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUzfHxmb25kb3xlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=600');*/
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  background: #f8f9fa;
   padding: 4rem 0;
   position: relative;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
 }
 
 .proyectos-section::before {
@@ -161,13 +156,9 @@ body {
 /* CARRUSEL PROYECTOS */
 .carousel-section {
   padding: 60px 0;
-  background-image: url('https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvbmRvfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1600');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 80vh;
-  width: 100%;
+  background: #f8f9fa;
   position: relative;
+  overflow: hidden;
 }
 
 /* Overlay para mejorar la legibilidad */
