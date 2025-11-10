@@ -29,7 +29,7 @@
     }, false);
 
 
-    // Simple contact form handling (simulación)
+    // Simple contact form handling 
     document.addEventListener('DOMContentLoaded', function () {
         const form = document.getElementById('contact-form');
         const yearEl = document.getElementById('year');
@@ -46,8 +46,11 @@
                     alert('Por favor completa todos los campos.');
                     return;
                 }
-                // En una app real se enviaría a un endpoint. Aquí simulamos envío.
-                alert('Gracias, ' + name + '. Tu mensaje ha sido recibido (simulado).');
+                const getformEndpoint = 'https://getform.io/f/agdjepyb';
+                form.action = getformEndpoint;
+                form.method = 'POST';
+                form.submit();
+                alert('Gracias, ' + name + '. Tu mensaje ha sido recibido.');
                 form.reset();
             });
         }

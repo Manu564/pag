@@ -177,7 +177,10 @@
       <!-- Formulario de Contacto -->
       <div class="col-md-7">
         <h2 class="h4 mb-4">Contáctame</h2>
-        <form id="contact-form" class="needs-validation" action="#" method="post" novalidate>
+        <form id="contact-form" class="needs-validation" method="post" novalidate>
+          <div id="form-alert" class="alert alert-success d-none" role="alert">
+            ¡Gracias por contactarme! Tu mensaje fue enviado correctamente.
+          </div>         
           <div class="mb-3">
             <label for="name" class="form-label">Nombre</label>
             <input id="name" name="name" type="text" class="form-control" placeholder="Tu nombre" required>
